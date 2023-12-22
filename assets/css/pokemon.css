@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'pokefont';
+    src: url(../../fonts/Pokemon\ Hollow.ttf);
+}
+
+
+
+.grass{
+    background-image: linear-gradient(to right, #78c850, #60a33f);
+}
+
+.fire{
+    
+    background-image: linear-gradient(to right, #FA5542, #c74334);
+}
+
+.flying{ 
+    background-image: linear-gradient(to right, #78A3FF, #99b9ff);
+}
+
+.poison{ 
+    background-image: linear-gradient(to right, #A75C9F, #80467a)
+}
+
+.pokemons{
+    background-image: linear-gradient(to right, #d5ddff, #d6dcff);
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1;
+}
+
+#mainTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainTitle img{
+    width: 80vw;
+}
+
+.pokemon{
+    margin: .5rem;
+    padding: 2rem 1rem;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon .number{
+    color: white;   
+    text-align: right;
+    font-size: .625rem;
+}
+
+.pokemon .name{
+    color: white;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.pokemon .detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.pokemon .detail .types .type{
+    color: rgb(218, 218, 218);
+    text-transform: uppercase;
+    filter: brightness(1.15);
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .725rem;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.pokemon .detail img{
+    max-width: 100%;
+    height: 70px;
+    display: flex;
+    align-self: flex-end;
+}
+
+#botoes{
+    padding: 20px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+}
+
+#moreButton1, #moreButton2, #moreButton3, #moreButton4, #moreButton5, #moreButton6{
+    margin: .5rem;
+    padding: 2rem 1rem;
+    border: 1px solid black;
+    color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    width: 75vw;
+    height: 165px;
+    z-index: 1000;
+    transform: translate(-20px, -18px);
+}
+
+.pag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+}
+
+.pag button{
+    background-color: #6c79bd;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pag button:hover{
+    background-color: #48517e;
+}
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.473);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    background-color: white;
+    width: 30vw;
+    min-width: 250px;
+    position: relative;
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, -0, 0);
+    }
+}
+
+.mostrar .modal{
+    animation: modal .3s;
+}
+
+.fechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.mostrar{
+    display: flex;
+}
+
+@media screen and (min-width: 768px){
+    .content{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    #mainTitle img{
+        width: 329px;
+    }
+
+    #pokemonList{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #botoes{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #moreButton1, #moreButton2, #moreButton3, #moreButton4, #moreButton5, #moreButton6{
+        width: 215px;
+        height: 160px;
+        transform: translate(-20px, -18px);
+    }
+
+
+}
+
+@media screen and (min-width: 380px) and (max-width: 767px) {
+    .pokemons{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #mainTitle img{
+        width: 329px;
+    }
+
+    #botoes{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #moreButton1, #moreButton2, #moreButton3, #moreButton4, #moreButton5, #moreButton6{
+        width: 41vw;
+        height: 160px;
+        transform: translate(-20px, -18px);
+    }
+
+
+}

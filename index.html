@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pokemon.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+</head>
+<body>
+
+    <section class="content">
+        <div
+            id="mainTitle"><img src="img/logo-pokedex.png" alt="logo">
+        </div>
+
+
+
+
+        <ol id="pokemonList" class="pokemons">
+            <div id="botoes" class="botoesList">
+                <button type="button" id="moreButton1"></button>
+                <button type="button" id="moreButton2"></button>
+                <button type="button" id="moreButton3"></button>
+                <button type="button" id="moreButton4"></button>
+                <button type="button" id="moreButton5"></button>
+                <button type="button" id="moreButton6"></button>
+            </div>
+
+
+
+
+            <li class="pokemon grass" >
+                <span class="number">#1</span>
+                <span class="name">Bulbasaur</span>
+                
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type grass">Grass</li>
+                        <li class="type poison">Poison</li>
+                    </ol>
+                    
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
+                </div>
+            </li>
+
+            <li class="pokemon grass" >
+                <span class="number">#2</span>
+                <span class="name">Ivysaur</span>
+                
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type grass">Grass</li>
+                        <li class="type poison">Poison</li>
+                    </ol>
+                    
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg" alt="Ivysaur">
+                </div>
+            </li>
+
+            <li class="pokemon grass" >
+                <span class="number">#3</span>
+                <span class="name">Venosaur</span>
+                
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type grass">Grass</li>
+                        <li class="type poison">Poison</li>
+                    </ol>
+                    
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg" alt="Venosaur">
+                </div>
+            </li>
+
+            <li class="pokemon fire" >
+                <span class="number">#4</span>
+                <span class="name">Charmander</span>
+                
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type fire">Fire</li>
+                    </ol>
+                    
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg" alt="Bulbasaur">
+                </div>
+            </li>
+
+            <li class="pokemon fire" >
+                <span class="number">#5</span>
+                <span class="name">Charmeleon</span>
+                
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type fire">Fire</li>
+                    </ol>
+                    
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg" alt="Ivysaur">
+                </div>
+            </li>
+
+            <li class="pokemon fire" >
+                <span class="number">#6</span>
+                <span class="name">Charizard</span>
+                
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type fire">Fire</li>
+                        <li class="type flying">Flying</li>
+                    </ol>
+                    
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg" alt="Venosaur">
+                </div>
+            </li>
+        </ol>
+
+
+
+
+        <div class="pag">
+            <button type="button" id="loadMore">
+                Load More
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <div id="modal-pokemon bulba" class="modal-container">
+        <div class="modal Bulbassaur" >
+            <button type="button" class="fechar" id="fechar">X</button>
+            <h3>Bulbassaur</h3>
+            <ol class="types">
+                <li class="type grass">Grass</li>
+                <li class="type poison">Poison</li>
+            </ol>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
+            <ul>
+                <li>HP</li>
+                <li>XP</li>
+                <li>PW</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
