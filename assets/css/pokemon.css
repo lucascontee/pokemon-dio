@@ -105,8 +105,8 @@
 
 #moreButton1, #moreButton2, #moreButton3, #moreButton4, #moreButton5, #moreButton6{
     margin: .5rem;
+    border: none;
     padding: 2rem 1rem;
-    border: 1px solid black;
     color: transparent;
     background-color: transparent;
     cursor: pointer;
@@ -176,12 +176,15 @@
 }
 
 .fechar{
+    font-size: 18px;
+    cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    color: white;
 }
 
 .mostrar{

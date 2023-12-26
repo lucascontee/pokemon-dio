@@ -1,19 +1,235 @@
-.Bulbassaur{
-    color: white;
-    background-image: linear-gradient(to right, #60a33f, #78c850); 
-    padding: 40px;
-    
+
+.fotoEtype{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.type{
+.modal h3{
+    text-align: center;
+    margin: 0;
+    margin-top: 40px ;
+    margin-bottom: 20px;
+}
+
+.modal img{
+    width: 120px;
+    margin-bottom: -30px;
+}
+
+.modal .type{
     list-style: none;
     color: rgb(218, 218, 218);
     text-transform: uppercase;
     filter: brightness(1.15);
-    padding: .25rem .5rem;
     margin-bottom: 5px;
+    padding: .25rem .5rem;
     font-size: .725rem;
     border-radius: 25px;
     text-align: center;
-    width: 25%;
+    width: 70px;
+}
+
+.modal ul{
+    margin: 10px 0px 0px 0px;
+    background-color: white;
+    color: black;
+    border-radius: 0px 0px 20px 20px;
+    padding: 40px 20px 20px 20px;
+    list-style: none;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.barraBase{
+    background-color: rgb(182, 182, 182);
+    width: 240px;
+    height: 14px;
+}
+
+
+
+
+
+/*BULBASAUR*/
+
+.Bulbassaur{
+    color: white;
+    background-image: linear-gradient(to right, #006359, #0da091); 
+    border-radius: 20px;
+}
+
+#barraDeVidaBulba{
+    background-color: #006359;
+    width: 100px;
+    height: 13px;
+}
+
+#barraXpBulba{
+    background-color: #006359;
+    width: 40px;
+    height: 13px;
+}
+
+#barraBulba{
+    background-color: #006359;
+    width: 118px;
+    height: 13px;
+}
+
+
+
+/*IVYSAUR*/
+#barraDeVidaIvy{
+    background-color: #006359;
+    width: 124px;
+    height: 13px;
+}
+
+#barraXpIvy{
+    background-color: #006359;
+    width: 103px;
+    height: 13px;
+}
+
+#barraAtkIvy{
+    background-color: #006359;
+    width: 150px;
+    height: 13px;
+}
+
+#barraDefIvy{
+    background-color: #006359;
+    width: 151px;
+    height: 13px;
+}
+
+
+
+/*VENOSAUR*/
+#barraDeVidaVen{
+    background-color: #006359;
+    width: 150px;
+    height: 13px;
+}
+
+#barraXpVen{
+    background-color: #006359;
+    width: 190px;
+    height: 13px;
+}
+
+#barraAtkVen{
+    background-color: #006359;
+    width: 190px;
+    height: 13px;
+}
+
+#barraDefVen{
+    background-color: #006359;
+    width: 188px;
+    height: 13px;
+}
+
+
+
+/*CHARMANDER*/
+.charmander{
+    color: white;
+    background-image: linear-gradient(to right, #FA5542, #c74334);
+    border-radius: 20px;
+}
+
+#barraDeVidaChar{
+    background-color: #c74334;
+    width: 80px;
+    height: 13px;
+}
+
+#barraXpChar{
+    background-color: #c74334;
+    width: 40px;
+    height: 13px;
+}
+
+#barraAtkChar{
+    background-color: #c74334;
+    width: 80px;
+    height: 13px;
+}
+
+#barraDefChar{
+    background-color: #c74334;
+    width: 70px;
+    height: 13px;
+}
+
+
+/*CHARMELEON*/
+.charmander{
+    color: white;
+    background-image: linear-gradient(to right, #FA5542, #c74334);
+    border-radius: 20px;
+}
+
+#barraDeVidaMeleon{
+    background-color: #c74334;
+    width: 110px;
+    height: 13px;
+}
+
+#barraXpMeleon{
+    background-color: #c74334;
+    width: 103px;
+    height: 13px;
+}
+
+#barraAtkMeleon{
+    background-color: #c74334;
+    width: 115px;
+    height: 13px;
+}
+
+#barraDefMeleon{
+    background-color: #c74334;
+    width: 100px;
+    height: 13px;
+}
+
+
+
+/*CHARIZARD*/
+.charmander{
+    color: white;
+    background-image: linear-gradient(to right, #FA5542, #c74334);
+    border-radius: 20px;
+}
+
+#barraDeVidaZard{
+    background-color: #c74334;
+    width: 140px;
+    height: 13px;
+}
+
+#barraXpZard{
+    background-color: #c74334;
+    width: 200px;
+    height: 13px;
+}
+
+#barraAtkZard{
+    background-color: #c74334;
+    width: 155px;
+    height: 13px;
+}
+
+#barraDefZard{
+    background-color: #c74334;
+    width: 130px;
+    height: 13px;
 }
